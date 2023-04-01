@@ -1,5 +1,5 @@
 Kod nasıl çalışıyor ve ne zaman çalıştırılmalı:
-    !!!Kod düzgün çalışması için yalnız perşembe çalıştırılmalıdır.!!!
+    !!!Kodun düzgün çalışması için yalnız perşembe çalıştırılmalıdır.!!!
     Kodu çalıştırmadan önce lütfen kullanıcı adınızı ve şifrenizi giriniz.
     Kod 2 nolu yemekhaneden yemek alacaktır ama 70.satırdaki kodu değiştirirseniz diğer yemekhanelere geçiş yapabilirsiniz.
     Kodun çalışmasını otomatikleştirmek için https://www.pythonanywhere.com/ tarzı bir server'a kod yüklenebilir. Bu sitede kodu ne zaman ve saat kaçta çalıştırabileceğinizi seçebiliyorsunuz. !Günü perşembe yapmayı unutmayınız.!
