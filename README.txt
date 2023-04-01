@@ -1,7 +1,7 @@
 Kod nasıl çalışıyor ve ne zaman çalıştırılmalı:
     !!!Kodun düzgün çalışması için yalnız perşembe çalıştırılmalıdır.!!!
     Kodu çalıştırmadan önce lütfen kullanıcı adınızı ve şifrenizi giriniz.
-    Kod 2 nolu yemekhaneden yemek alacaktır ama 70.satırdaki kodu değiştirirseniz diğer yemekhanelere geçiş yapabilirsiniz.
+    Kod 2 nolu yemekhaneden yemek alacaktır ama ufak bir özelleştirmeyle diğer yemekhanelere geçiş yapabilirsiniz.
     Kodun çalışmasını otomatikleştirmek için https://www.pythonanywhere.com/ tarzı bir server'a kod yüklenebilir. Bu sitede kodu ne zaman ve saat kaçta çalıştırabileceğinizi seçebiliyorsunuz. !Günü perşembe yapmayı unutmayınız.!
     Kod sadece 1 haftalık öğle ve akşam yemeklerinizi alacak şekilde tasarlanmıştır.Kodu biraz özelleştirerek bunu kolaylıkla değiştirebilirsiniz.
     Google chrome sürümünüz SeleniumDrivers dosyasındaki chrome driverı çalıştırmaya yetmeyebilir.Chrome'unuzun sürümünün uyumlu olduğundan emin olun veya chrome driverını kendi sürümünüze göre yükleyebilirsiniz.
