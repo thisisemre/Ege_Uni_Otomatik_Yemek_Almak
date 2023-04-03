@@ -40,17 +40,44 @@ def yemek_sec():
 
     click_sayisi = 0
     if yemek_tarih_ay == buay:
-        alinacak_son_gun = bugun + 10  # kod her perşembe gece 12'den öncki herhangi bir saate çalışıcaktır
-        if alinacak_son_gun >= yemek_tarih_gun:
-            click_sayisi = alinacak_son_gun - yemek_tarih_gun + 1
+        if yemek_tarih_ay == 2:  # şubat demek 28 çekiyor yani
+            if yemek_tarih_gun <= 18:
+                alinacak_son_gun = bugun + 10  # kod her perşembe gece 12'den öncki herhangi bir saate çalışıcaktır
+                if alinacak_son_gun >= yemek_tarih_gun:
+                    click_sayisi = alinacak_son_gun - yemek_tarih_gun + 1
+            else:
+                alinacak_son_gun = bugun + 10  # kod her perşembe gece 12'den öncki herhangi bir saate çalışıcaktır
+                if alinacak_son_gun >= yemek_tarih_gun:
+                    click_sayisi = alinacak_son_gun - yemek_tarih_gun + 1-28
+
+        elif yemek_tarih_ay in [1, 3, 5, 7, 8, 10, 12]:  # 31 çekiyor
+            if yemek_tarih_gun <= 21:
+                alinacak_son_gun = bugun + 10  # kod her perşembe gece 12'den öncki herhangi bir saate çalışıcaktır
+                if alinacak_son_gun >= yemek_tarih_gun:
+                    click_sayisi = alinacak_son_gun - yemek_tarih_gun + 1
+            else:
+                alinacak_son_gun = bugun + 10  # kod her perşembe gece 12'den öncki herhangi bir saate çalışıcaktır
+                if alinacak_son_gun >= yemek_tarih_gun:
+                    click_sayisi = alinacak_son_gun - yemek_tarih_gun + 1 - 31
+        else:  # 30 çekiyor
+            if yemek_tarih_gun <= 20:
+                alinacak_son_gun = bugun + 10  # kod her perşembe gece 12'den öncki herhangi bir saate çalışıcaktır
+                if alinacak_son_gun >= yemek_tarih_gun:
+                    click_sayisi = alinacak_son_gun - yemek_tarih_gun + 1
+            else:
+                alinacak_son_gun = bugun + 10  # kod her perşembe gece 12'den öncki herhangi bir saate çalışıcaktır
+                if alinacak_son_gun >= yemek_tarih_gun:
+                    click_sayisi = alinacak_son_gun - yemek_tarih_gun + 1 - 30
 
     clickler = driver.find_elements(By.CLASS_NAME, "form-control")
     sayac = 0
     for click in clickler:
-        click.click()
-        sayac += 1
         if sayac == click_sayisi:
             break
+        else:
+            click.click()
+            sayac += 1
+
     driver.find_element(By.ID, "ContentPlaceHolder1_btnSepetEkle").click()
 
 
